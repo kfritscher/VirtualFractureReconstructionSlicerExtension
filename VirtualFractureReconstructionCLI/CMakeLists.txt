@@ -1,5 +1,5 @@
 # This project is designed to be built outside the Insight source tree.
-cmake_minimum_required(VERSION 2.8.8)
+cmake_minimum_required(VERSION 3.5)
 
 #-----------------------------------------------------------------------------
 set(MODULE_NAME FractureReconstructionCLI)
