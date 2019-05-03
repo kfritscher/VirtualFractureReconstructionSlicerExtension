@@ -156,9 +156,9 @@ void qSlicerVirtualFractureReconstructionModuleWidget::SetupTreeView(qMRMLTreeVi
     tree->sceneModel())->setColumnCount(3);
 
     tree->header()->setStretchLastSection(false);
-    tree->header()->setResizeMode(0, QHeaderView::Stretch);
-    tree->header()->setResizeMode(1, QHeaderView::ResizeToContents);
-    tree->header()->setResizeMode(2, QHeaderView::ResizeToContents);
+    tree->header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    tree->header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+    tree->header()->setSectionResizeMode(2, QHeaderView::ResizeToContents);
 
     tree->sortFilterProxyModel()->setHideChildNodeTypes(
     QStringList() << "vtkMRMLFiberBundleNode" << "vtkMRMLAnnotationNode"<<"vtkMRMLScalarVolumeNode");

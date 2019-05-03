@@ -32,9 +32,6 @@
 #include "qSlicerVirtualFractureReconstructionModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerVirtualFractureReconstructionModule, qSlicerVirtualFractureReconstructionModule);
-
-//-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_VirtualFractureReconstruction
 class qSlicerVirtualFractureReconstructionModulePrivate
 {
