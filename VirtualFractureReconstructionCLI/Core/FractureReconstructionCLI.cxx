@@ -54,14 +54,6 @@ main(int argc, char **argv)
     typedef itk::ImageFileReader<LabelType> ReaderType;
     typedef itk::ImageFileReader<InputImageType> ImageReaderType;
     typedef itk::ImageFileWriter<LabelType> WriterType;
-    typedef itk::ImageFileWriter<InputImageType> ImageWriterType;
-    typedef itk::ImageFileWriter<InputImageType> ImageWriterType;
-
-    typedef itk::Image<float, 3> DistImageType;
-    typedef itk::ImageFileReader<InputImageType> DistReaderType;
-
-    typedef itk::CastImageFilter<LabelType,InputImageType> CastImageFilterType;
-    typedef CastImageFilterType::Pointer CastImageFilterPointer;
 
     ImageReaderType::Pointer readerImageR = ImageReaderType::New();
     ImageReaderType::Pointer readerImageC = ImageReaderType::New();
@@ -76,8 +68,6 @@ main(int argc, char **argv)
   typedef itk::ScalableAffineTransform<double, 3> SPTransformType;
   typename GroupType::Pointer grp = GroupType::New();
   typename SPTransformType::Pointer sptransform = SPTransformType::New();*/
-
-    typedef itk::CastImageFilter<InputImageType, LabelType > CastFilterTypeItoL;
 
     typedef itk::ScalableAffineTransform<double, 3> ITKTransformType;
     typedef ITKTransformType::Pointer ITKTransformPointer;

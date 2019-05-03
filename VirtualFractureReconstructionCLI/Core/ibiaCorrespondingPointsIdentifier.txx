@@ -523,8 +523,6 @@ CorrespondingPointsIdentifier<LabelType, InputImageType>::PerformPreProcessing(L
     SPWriterType::Pointer spwriter = SPWriterType::New();
 
     typedef MomentRegistrator< LabelType >      MassRegistratorType;
-    typedef typename MassRegistratorType::TransformType
-            MassRegTransformType;
 
     typename MassRegistratorType::Pointer registrator =
             MassRegistratorType::New();
